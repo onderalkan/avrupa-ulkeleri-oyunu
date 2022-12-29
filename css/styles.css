@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+.mapDiv {
+    width: 100%;
+}
+
+path:hover {
+    cursor: pointer;
+    fill: #1100ff !important;
+    transition: .3s ease
+}
+
+.correct {
+    fill: #00d111 !important;
+    transition: .3s ease
+}
+
+.correct:hover {
+    fill: #00d111 !important;
+}
+
+.incorrect {
+    fill: #d10000 !important;
+    transition: .3s ease
+}
+
+path {
+    transition: .3s ease
+}
+
+.info {
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    background: #001e80;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    z-index: 100;
+}
+
+
+@media only screen and (min-width: 700px) {
+    .info {
+        font-size: 2rem;
+        min-height: 190px;
+    }
+
+    .info h2,
+    .info p {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .control {
+        height: 150px;
+        width: 275px;
+        position: fixed;
+        bottom: 30px;
+        right: 50px;
+        z-index: 200;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    .control {
+        height: 225px;
+        width: 275px;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        z-index: 200;
+        background: #0000003d;
+    }
+}
+
+.controlButton {
+    height: 50px;
+    width: 50px;
+    background: #0028aa;
+    border: white solid 2px;
+    color: white;
+    border-radius: 5px;
+}
+
+.controlButton:hover {
+    cursor: pointer;
+    background: #1100ff;
+}
+
+.up {
+    position: absolute;
+    left: 75px;
+    top: 25px;
+}
+
+.down {
+    position: absolute;
+    left: 75px;
+    top: 125px;
+}
+
+.right {
+    position: absolute;
+    left: 125px;
+    top: 75px;
+}
+
+.left {
+    position: absolute;
+    left: 25px;
+    top: 75px;
+}
+
+.plus {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.minus {
+    position: absolute;
+    right: 25px;
+    top: 125px;
+}
+.home {
+    position: absolute;
+    left: 75px;
+    top: 75px;
+}
+
+.fa-chevron-up,
+.fa-chevron-down,
+.fa-chevron-right,
+.fa-chevron-left,
+.fa-plus,
+.fa-minus,
+.fa-home {
+    position: absolute;
+    right: 17px;
+    top: 15px;
+}
+
+.hidden {
+    display: none;
+}
